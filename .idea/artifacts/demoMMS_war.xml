@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="demoMMS:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>demoMMS</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="demoMMS-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="demoMMS:war exploded" />
+    </root>
+  </artifact>
+</component>

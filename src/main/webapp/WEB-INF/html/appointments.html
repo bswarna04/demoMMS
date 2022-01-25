@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Management Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
+</head>
+<body>
+<header>
+
+    <div class="container">
+
+        <a href="#" class="logo"><span>M</span>edical<span>C</span>are.</a>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html" target="_parent">About</a></li>
+                <li><a href="doctors.html" target="_parent">Doctors</a></li>
+                <li><a href="appointments.html" target="_parent">appointments</a></li>
+                <li><a href="signin.html" target="_parent">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+    </div>
+
+</header>
+
+<section class="appointments" id="appointments">
+
+    <div class="container min-vh-100">
+
+        <div class="row justify-content-center">
+
+            <h1 class="heading"><span> make an appointment</span></h1>
+
+            <div class="col-md-10" >
+
+                <form action="">
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="full name" pattern="^[A-Z][a-z]+\s[A-Z][A-Z'\-a-z]+$" required>
+                        <input type="text" placeholder="phone" ID="phone" onblur="validate_phone_number()" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" placeholder="your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required>
+                        <select name="" id="appointment" required>
+                            <option value="" disabled selected>make an appointment</option>
+                            <option value="09-11 am">09-11 am</option>
+                            <option value="11-03 pm">11-03 pm</option>
+                            <option value="03-06 pm">03-06 pm</option>
+                            <option value="06-09 pm">06-09 pm</option>
+                        </select>
+                    </div>
+
+                    <textarea name="apptextarea" id="tarea" cols="30" rows="10" placeholder="message ( optional )"></textarea>
+
+                    <input type="submit" name="" id="sid" value="make appointment" class="button">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <h1 class="credit text-center mx-auto">created by <span>Swarna PerScholas</span> | all rights reserved.</h1>
+
+</section>
+<script src="../js/main.js"></script>
+</body>
+</html>
