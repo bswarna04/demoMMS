@@ -49,20 +49,28 @@
                 <form action="">
 
                     <div class="inputBox">
-                        <input type="text" placeholder="full name" pattern="^[A-Z][a-z]+\s[A-Z][A-Z'\-a-z]+$" required>
-                        <input type="text" placeholder="phone" ID="phone" onblur="validate_phone_number()" required>
+                        <input type="text" placeholder="fullname" pattern="^[A-Z][a-z]+\s[A-Z][A-Z'\-a-z]+$" required>
+                        <input type="text" placeholder="lastname"  required>
                     </div>
 
+
+
                     <div class="inputBox">
-                        <input type="email" placeholder="your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required>
+                        <input type="date" id="appointmentdate" placeholder="Enter appointmentdate"  required>
+<!--                        <input type="email" placeholder="your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required>-->
                         <select name="" id="appointment" required>
-                            <option value="" disabled selected>make an appointment</option>
+                            <option value="" disabled selected>Select time</option>
                             <option value="09-11 am">09-11 am</option>
                             <option value="11-03 pm">11-03 pm</option>
                             <option value="03-06 pm">03-06 pm</option>
                             <option value="06-09 pm">06-09 pm</option>
                         </select>
                     </div>
+                     <div class="inputBox">
+                         <input type="email" placeholder="your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required>
+                         <input type="text" placeholder="phone" ID="phone" onblur="validate_phone_number()" required>
+                     </div>
+
 
                     <textarea name="apptextarea" id="tarea" cols="30" rows="10" placeholder="message ( optional )"></textarea>
 

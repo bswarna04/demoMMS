@@ -261,6 +261,36 @@ header .fa-bars{
 }
 
 
+.signup{
+    background:lightgray;
+}
+
+.signup .heading{
+    text-align:left;
+    color:#fff;
+}
+
+
+.signup form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.signup form .inputBox input {
+    height: 4rem;
+    width:49%;
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    color:var(--black);
+}
+
+.signup form input[type="submit"]{
+    width:20rem;
+}
+
+
 .footer{
     background:var(--black);
 }
